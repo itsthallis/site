@@ -1,0 +1,307 @@
+
+$cordestaque: #26C9FF;
+$cordefundo: #004BAA;
+$cordetexto: #555555;
+$branco: #fff;
+$cinzaclaro: #f9f9f9;
+
+$m1: 3vh;
+$m2: 6vh;
+$m3: 9vh;
+$m4: 12vh;
+
+// Global----------
+html, body *{
+	transition: ease 500ms;
+}
+
+body{
+	font-size: 16px !important;
+}
+
+h1{
+	font-size: 3.157rem !important;
+		@media (max-width: 992px) {
+		font-size: 1.777rem !important;
+  	}
+}
+h2{
+	font-size: 2.369rem !important;
+	@media (max-width: 992px) {
+		font-size: 1.333rem !important;
+  	}
+}
+h3{
+	font-size: 1.777rem !important;
+}
+h4{
+	font-size: 1.333rem !important;
+}
+h5{
+	font-size: 1em !important;
+}
+h6{
+	font-size: 0.75em !important;
+}
+
+.roll{
+	height: 2000px;
+	background-color: #d7d7d7;
+}
+
+.cordefundo{
+	color: $cordefundo;
+}
+
+.hr{
+	height: 2px;
+	background-color: $cordefundo;
+}
+
+.margin-top1{
+	margin-top: $m4;
+}
+
+.btn-primary{
+		margin-top: 3vh !important;
+		border-color: #fff !important;
+		border-radius: 30px !important;
+		background-color: #fff !important;
+		color: $cordetexto !important;
+		padding: 15px 30px 15px 30px !important;
+		&:hover,
+		&:focus,
+		&:active {
+		  border-color: $cordestaque !important;
+		  background-color: $cordestaque !important;
+		  color: #fff !important;
+		}
+		@media (max-width: 992px) {
+			padding: 5px 20px 5px 20px !important;
+		}
+	}
+
+.btn-secondary{
+		margin-top: 3vh !important;
+		border-color: $cordefundo !important;
+		border-radius: 30px !important;
+		background-color: $cordefundo !important;
+		color: #fff !important;
+		padding: 15px 30px 15px 30px !important;
+		&:hover,
+		&:focus,
+		&:active {
+		  border-color: $cordestaque !important;
+		  background-color: $cordestaque !important;
+		  color: #fff !important;
+		}
+		@media (max-width: 992px) {
+			padding: 5px 20px 5px 20px !important;
+		}
+	}
+
+
+
+// Navbar----------
+nav{
+	.navbar-brand{
+		color: $cordefundo;
+		&:hover,
+		&:focus,
+		&:active {
+		  color: $cordefundo;
+		}
+	}
+	ul li{
+		padding: 10px 25px 10px 25px;
+		border-radius: 25px;
+		&:hover,
+		&:focus,
+		&:active {
+		  background-color: $cinzaclaro;
+		}
+	}
+	ul li a{
+	  color: $cordetexto;
+		&:hover,
+		&:focus,
+		&:active {
+		  color: $cordetexto;
+		}
+	}
+	#navbarNav{
+		justify-content: flex-end;
+	}
+}
+
+.navbar{
+	background-color: $branco;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.37);
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.37);
+}
+
+.navbar-toggler{
+	background-color: $cinzaclaro !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(180,180,180, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+
+// Banner----------
+#banner{
+	height: 70vh;
+	width: auto;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url("../images/banner.jpg");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: $branco;
+	margin-top: 68px;
+	@media (max-width: 992px) {
+		margin-top: 48px;
+	}
+
+	.container{
+		max-width: 960px;
+	}
+
+	#legenda h1{
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	#legenda h2{
+		font-weight: bold;
+	}
+}
+
+
+
+// Salas
+#salas{
+	img{
+		@media (max-width: 768px) {
+		margin-top: 5vh;
+	}
+	}
+	.tab-content .row{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		p{
+			margin-top: 4vh;
+		}
+	}
+}
+
+#contato{
+	input, textarea, select, radio{
+		background-color: #EEEEEE;
+		border-color: #EEEEEE;
+	}
+}
+
+
+// Locação----------
+#locacao{
+	.col-lg-6{
+		margin-top: 9vh;
+	}
+	h1,h2{
+		font-weight: bold;
+	}
+
+	@media (min-width: 576px) and (max-width: 768px) {
+		// .text-center{
+		// 	text-align: left !important
+		// }
+	}
+
+	#auditorio{
+		background-image: url("../images/auditorio.png");
+	}
+
+	#sala2{
+		background-image: url("../images/sala2.jpg");
+	}
+
+	#auditorio, #sala2{
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		
+		@media (max-width: 576px) {
+			margin: 0 auto;
+		}
+	}
+}
+
+.mapa{
+	.col-lg-6{
+		margin-top: 9vh;
+	}
+	h1,h2{
+		font-weight: bold;
+	}
+}
+
+.circle {
+	position: relative;
+	border-radius: 50%;
+	width: 100%;
+	height: auto;
+	padding-top: 100%;
+	background: white;
+}
+
+.flexdsp{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.flexdsp2{
+	display: flex;
+	align-items: center;
+	// justify-content: flex-start;
+	flex-direction: column
+}
+
+// Footer----------
+#footer{
+	background-color: $cordefundo;
+	height: 14vh;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	#flexfooter{
+		display: flex;
+		align-items: center;
+	}
+
+	span{
+		font-size: 	20px;
+	}
+
+	@media (max-width: 768px) {
+		height: 25vh;
+
+		.col-md-6:last-child{
+			margin-top: 1vh;
+		}
+	}
+	
+}
