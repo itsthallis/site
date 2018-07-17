@@ -46,11 +46,11 @@ h6{
 
 .mapa{
 	.rounded-circle{
-	border-radius: 100% 100% 100% 100% !important;
-	-moz-border-radius: 100% 100% 100% 100% !important;
-	-webkit-border-radius: 100% 100% 100% 100% !important;
-	-webkit-clip-path: circle(50% at 50% 50%);
-	clip-path: circle(50% at 50% 50%);
+		border-radius: 100% 100% 100% 100% !important;
+		-moz-border-radius: 100% 100% 100% 100% !important;
+		-webkit-border-radius: 100% 100% 100% 100% !important;
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);
 	}
 	.col-lg-6{
 		margin-top: 9vh;
@@ -58,6 +58,10 @@ h6{
 	h1,h2{
 		font-weight: bold;
 	}
+}
+
+.lista{
+	font-size: 12px;
 }
 
 .circle {
@@ -240,7 +244,7 @@ nav{
 		justify-content: center;
 	}
 	@media (max-width: 768px) {
-		p{
+		p, h4{
 			margin-top: 4vh;
 		}
 	}
